@@ -22,11 +22,11 @@ def getOptions():
     parser.add_argument("-e", "--email", required=True,
                         help="List of email address to update",nargs='+',default=[],dest="email")
     parser.add_argument("-a", "--account", required=True,
-                        dest="user", help="Admin Account User eg: connections@belsoft.ch")
+                        dest="user", help="Admin Account User eg: admin@mydomain.com")
     parser.add_argument("-p", "--password", required=True,
                         help="Admin Account Passwort")
     parser.add_argument("-c", "--connections", dest="apiurl",
-                        required=True, help="Connections URL: https://conn.belsoft.ch")
+                        required=True, help="Connections URL: https://connections.mydomain.com")
     parser.add_argument("-t","--taglist",help="List of tags to add",dest="taglist",nargs='+',default=[],required=True)
 
     parser.add_argument("-d","--delete",help="Delete Tags from the profile",dest="remove",default=False)
